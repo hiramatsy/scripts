@@ -10,6 +10,9 @@ callers2.pl: Same as callers.pl except for using ${bin}.disas
 disasf.pl: Disassemble a specified function
 (Example)$ disasf.pl a.out myFunction
 
+disasf2.pl: Same as disasf.pl except for printing the displacement of each instruction
+(Example)$ disasf2.pl a.out myFunction
+
 fa72.pl: Same as disasf.pl except for printing calling list
 (Example)$ fa72.pl a.out myFunction
 
