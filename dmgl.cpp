@@ -12,14 +12,10 @@ int main(int argc, char **argv)
 		char *dmn = abi::__cxa_demangle(name, 0, 0, &status);
 		if (status)
 		{
-			//std::cout << name << ": (Bad symbol)" << std::endl;
+			std::cerr << name << ": (Bad symbol)" << std::endl;
 			continue;
 		}
-		std::cout
-		  //<< name
-		  //<< ":\n\t"
-		  << dmn
-		  << std::endl;
+		std::cout << dmn << std::endl;
 		std::free(dmn);
 	}
 	return 0;

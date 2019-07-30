@@ -13,7 +13,7 @@ disasf.pl: Disassemble a specified function
 fa72.pl: Same as disasf.pl except for printing calling list
 (Example)$ fa72.pl a.out myFunction
 
-dmgl.cpp: Demangle c++ symbols
+dmgl.cpp: Demangle c++ symbols: Using abi::__cxa_demangle
 (Compile)$ gcc -std=c++11 dmgl.cpp -o dmgl -lstdc++
 (Example)$ dmgl _Z10myFunctionv
 
