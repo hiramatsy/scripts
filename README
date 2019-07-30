@@ -1,0 +1,26 @@
+asym.pl: Print symbol by address
+(Example)$ asym.pl a.out a3374
+
+callers.pl: List the functions calling the function specified
+(Example)$ callers.pl a.out printf
+
+callers2.pl: Same as callers.pl except for using ${bin}.disas
+(Example)$ callers2.pl a.out printf
+
+disasf.pl: Disassemble a specified function
+(Example)$ disasf.pl a.out myFunction
+
+fa72.pl: Same as disasf.pl except for printing calling list
+(Example)$ fa72.pl a.out myFunction
+
+dmgl.cpp: Demangle c++ symbols
+(Compile)$ gcc -std=c++11 dmgl.cpp -o dmgl -lstdc++
+(Example)$ dmgl _Z10myFunctionv
+
+lsyms.pl: List symbols
+(Example)$ lsyms.pl print
+
+print_nums.pl: Print the specified range of specified file content
+(Usage) (this script) (input file name) (template string) (offset) (size) [delimiter]
+(Example) $ print_nums.pl a.out "L*" 9ee80c e0 " "
+
