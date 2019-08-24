@@ -27,3 +27,12 @@ print_nums.pl: Print the specified range of specified file content
 (Usage) (this script) (input file name) (template string) (offset) (size) [delimiter]
 (Example) $ print_nums.pl a.out "L*" 9ee80c e0 " "
 
+git-list-root-treeobj.pl: List the root tree of each commit
+(Usage) (this script)
+
+~~~
+(tree):(commit)
+(tree):(commit),(commit),(commit)
+(tree):(commit),(commit)
+...
+~~~
